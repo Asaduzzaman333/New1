@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    min-height: 100ch;
+}
+
+nav{
+    width: 100%;
+    height: 65px;
+    background-color: rgb(1, 1, 36);
+    position: sticky;
+    top: 0px;
+}
+
+.container{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+/*brand section start*/
+
+.brand-section{
+    display: flex;
+    align-items: center;
+}
+
+.brand-logo{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.brand-logo span{
+    color: royalblue;
+    font-size: 2rem;
+}
+
+.brand-title h2{
+    color: #fff;
+}
+
+.brand-title a{
+    text-decoration: none;
+}
+
+/*brand section end*/
+
+/*main menu start*/
+
+.main-menu{
+    display: flex;
+    margin-left: 2rem;
+}
+
+.main-menu a{
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: navajowhite;
+    letter-spacing: 1px;
+}
+
+.main-menu a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+/*main menu end*/
+
+/*right menu start*/
+.right-menu{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.right-menu a{
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: navajowhite;
+    letter-spacing: 1px;
+}
+
+.right-menu a:hover{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+.right-menu button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: hotpink;
+    cursor: pointer;
+}
+
+.right-menu button > span{
+    font-size: 1.5rem;
+}
+/*right menu end*/
+
+/*dropdown start*/
+.dropdown{
+    position: relative;
+}
+
+.dropdown>.dropdown-items{
+    position: absolute;
+    box-shadow: 0 4px 8px 0;
+    width: 100px;
+    height: auto;
+    border-radius: 0.50rem;
+    background-color: #fff;
+    display: none;
+    text-align: center;
+}
+
+.dropdown-items-li a{
+    background-color: transparent;
+    color: navy;
+    font-style: italic;
+    font-size: medium;
+    padding: 0.4rem 0.4rem;
+    font-weight: bold;
+}
+
+.dropdown-items-li:hover{
+    background-color: #fff;
+    padding: 1px;
+}
+
+.dropdown:hover .dropdown-items{
+    display: block;
+}
+
+.dropdown-items-ul{
+    list-style-type: none;
+}
+
+.divider{
+    border:none;
+    border-bottom: 1px solid #ddd;
+}
+/*dropdown end*/
+
+/*mega menu start*/
+.mega-menu{
+    position: relative;
+    padding: 1rem 0;
+}
+
+.mega-menu:hover .mega-menu-container{
+    display: block;
+}
+
+.mega-menu-container{
+    position: absolute;
+    box-shadow: 0 4px 8px 0;
+    width: 255px;
+    height: auto;
+    border-radius: 0.50rem;
+    background-color: #fff;
+    display: none;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.catagory-ul{
+    list-style-type: none;
+}
+
+.catagory-li a{
+    background-color: transparent;
+    color: blue;
+    font-style: italic;
+    font-size: medium;
+    padding: 0.4rem 0.4rem;
+    font-weight: bold;
+}
+
+.catagory-li:hover{
+    background-color: #fff;
+    padding: 2px;
+}
+
+.devider{
+    border:none;
+    border-bottom: 2px solid #ddd;
+}
+/*mega menu end*/
